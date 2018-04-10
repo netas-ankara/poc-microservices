@@ -59,3 +59,15 @@ ResponseEntity<List<Rate>> rateResponse =
 List<Rate> rates = rateResponse.getBody();
 ````
 
+## 002_Spring_Config_Server
+
+The project consists of two sub-projects. The first one is spring configuration client and the second one is spring configuration server.
+
+The client configuration can be refreshed from the following endpoint:
+````
+POST http://localhost:9999/actuator/refresh
+````
+
+After posting to the endpoint we can see that the edited configuration can be fetched.
+
+ 
